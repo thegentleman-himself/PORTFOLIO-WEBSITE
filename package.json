@@ -1,0 +1,61 @@
+{
+  "name": "nasa-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "analyze": "ANALYZE=true next build",
+    "export": "next build && next export",
+    "clean": "rm -rf .next out",
+    "test": "echo \"No tests specified\" && exit 0",
+    "test:watch": "echo \"No tests specified\" && exit 0",
+    "test:coverage": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.16",
+    "@sanity/client": "^6.12.4",
+    "@sanity/image-url": "^1.0.2",
+    "clsx": "^2.1.0",
+    "framer-motion": "^10.16.16",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.344.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "three": "^0.160.0",
+    "tailwind-merge": "^2.2.1",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/three": "^0.160.0",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prettier": "^3.1.1",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ]
+}
