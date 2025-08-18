@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cmd=${1:-}
+case "$cmd" in
+  audit)
+    shift || true
+    # Query local service (container published on 8000)
+    curl -s http://127.0.0.1:8000/audit/resources | jq . || curl -s http://127.0.0.1:8000/audit/resources
+    ;;
+  *)
+    echo "Usage: bot audit --resources" >&2
+    exit 1
+    ;;
+esac
+

@@ -1,0 +1,12 @@
+name = "free-cloud-bot-worker"
+main = "src/index.ts"
+compatibility_date = "2024-08-20"
+
+[[durable_objects.bindings]]
+name = "STATE"
+class_name = "StateDO"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["StateDO"]
+
