@@ -1,0 +1,15 @@
+{
+  "name": "free-cloud-bot-worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@cloudflare/workers-types": "4.20240821.0"
+  }
+}
+
